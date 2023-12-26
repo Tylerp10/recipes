@@ -9,7 +9,7 @@
 
 .home-container {
   background-color: bisque;
-  /* height: 100vh; */
+  height: 100vh;
   position: relative;
   z-index: 0;
   display: flex;
@@ -75,64 +75,64 @@
   z-index: 1;
 }
 .broccoli {
-  top: 95%;
+  top: 90%;
   left: 5%;
   animation: img-float 14s infinite ease-in-out;
 }
 .tomato {
-  top: 95%;
+  top: 90%;
   left: 15%;
   animation: img-float 19s infinite ease-in-out;
 }
 .carrot {
-  top: 95%;
+  top: 90%;
   left: 20%;
   animation: img-float 22s infinite ease-in-out;
 }
 .potato {
-  top: 95%;
+  top: 90%;
   left: 25%;
   animation: img-float 17s infinite ease-in-out;
 }
 .steak {
-  top: 95%;
+  top: 90%;
   left: 35%;
   animation: img-float 23s infinite ease-in-out;
 }
 .bread {
-  top: 95%;
+  top: 90%;
   left: 40%;
   animation: img-float 16s infinite ease-in-out;
 }
 .egg {
-  top: 95%;
+  top: 90%;
   left: 45%;
   animation: img-float 21s infinite ease-in-out;
 }
 .fish {
-  top: 95%;
+  top: 90%;
   left: 55%;
   animation: img-float 15s infinite ease-in-out;
 }
 .noodles {
-  top: 95%;
+  top: 90%;
   left: 60%;
   animation: img-float 18s infinite ease-in-out;
 }
 .banana {
-  top: 95%;
+  top: 90%;
   left: 65%;
   animation: img-float 14s infinite ease-in-out;
 }
 .beef {
-  top: 95%;
+  top: 90%;
   left: 75%;
   animation: img-float 25s infinite ease-in-out;
 }
 .cheese {
-  top: 95%;
+  top: 90%;
   left: 85%;
-  animation: img-float 21s infinite;
+  animation: img-float 21s infinite ease-in-out;
 }
 
 @keyframes img-float {
@@ -144,11 +144,11 @@
   }
 }
 
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
   .home-container {
     height: 100vh;
   }
-}
+} */
 
 /* MAIN PAGE-------------------- */
 
