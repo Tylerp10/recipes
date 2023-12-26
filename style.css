@@ -9,7 +9,7 @@
 
 .home-container {
   background-color: bisque;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   z-index: 0;
   display: flex;
@@ -55,12 +55,13 @@
   text-transform: uppercase;
   border: 1px solid black;
   box-shadow: 0px 2px 5px;
-  transition: 250ms;
+  transition: 500ms;
   background-color: rgba(255, 255, 255, 0.499);
 }
 .main-page-btn:hover {
-  transform: scale(1.2);
-  transition: 250ms;
+  transform: scale(1.1);
+  transition: 500ms;
+  letter-spacing: 5px;
 }
 .main-page-btn a {
   text-decoration: none;
@@ -75,57 +76,57 @@
 .broccoli {
   top: 95%;
   left: 5%;
-  animation: img-float 14s infinite;
+  animation: img-float 14s infinite ease-in-out;
 }
 .tomato {
   top: 95%;
   left: 15%;
-  animation: img-float 19s infinite;
+  animation: img-float 19s infinite ease-in-out;
 }
 .carrot {
   top: 95%;
   left: 20%;
-  animation: img-float 22s infinite;
+  animation: img-float 22s infinite ease-in-out;
 }
 .potato {
   top: 95%;
   left: 25%;
-  animation: img-float 17s infinite;
+  animation: img-float 17s infinite ease-in-out;
 }
 .steak {
   top: 95%;
   left: 35%;
-  animation: img-float 23s infinite;
+  animation: img-float 23s infinite ease-in-out;
 }
 .bread {
   top: 95%;
   left: 40%;
-  animation: img-float 16s infinite;
+  animation: img-float 16s infinite ease-in-out;
 }
 .egg {
   top: 95%;
   left: 45%;
-  animation: img-float 21s infinite;
+  animation: img-float 21s infinite ease-in-out;
 }
 .fish {
   top: 95%;
   left: 55%;
-  animation: img-float 15s infinite;
+  animation: img-float 15s infinite ease-in-out;
 }
 .noodles {
   top: 95%;
   left: 60%;
-  animation: img-float 18s infinite;
+  animation: img-float 18s infinite ease-in-out;
 }
 .banana {
   top: 95%;
   left: 65%;
-  animation: img-float 14s infinite;
+  animation: img-float 14s infinite ease-in-out;
 }
 .beef {
   top: 95%;
   left: 75%;
-  animation: img-float 25s infinite;
+  animation: img-float 25s infinite ease-in-out;
 }
 .cheese {
   top: 95%;
@@ -139,6 +140,12 @@
   }
   to {
     transform: translateY(-2000%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .home-container {
+    height: 100vh;
   }
 }
 
@@ -240,7 +247,11 @@
   }
 }
 
+
 @media screen and (max-width: 600px) {
+  .search-field {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .input-bar {
     width: 300px;
   }
